@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
+<title>Research on key technology of intelligent robot </title>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.item img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+</style>
+<style>
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 70px;
+  background-image: url(rvc.png);
+  background-size: cover;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.picItem {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+}
+
+.picItem p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#layout-menu {
+  background-color:	#FCFCFC;
+  width: 200px;
+  height: 100%;
+}
+
+#layout-menu .main-menu {
+  margin: 20px 5px;
+  border-bottom: 1px solid 		#F2F2F2;
+}
+
+.menu-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#layout-menu div {
+  margin-top: 20px;
+}
+
+#layout-content {
+  padding: 0 15px;
+}
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #007BB5;
+}
+</style>
+
+<style>
+  body {
+    font-family: "Times New Roman", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+</style>
+</head>
+
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+  <div class="menu-content">
+    <div>
+      <img src="ai.png" style="width: 80px; height: 80px;" />
+    </div>
+<!--    <div class="main-menu"> MENU </div>-->
+    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+    <div class="menu-item"><a href="https://github.com/">GitHub</a></div>
+    <div class="menu-item"><a href="http://robot.hnu.edu.cn/">RVC Lab</a></div>
+  </div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>智能机器人关键技术研究 </h1>
+</div>
+<hr>
+<h2>关于此领域</h2>
+<p>未知环境下区域搜索问题广泛存在于无人机区域侦察、水下机器人探测、灾后救援场景中，机器人处于区域内障碍物分布信息未知的环境下, 需通过机载传感器获取环境信息, 在限定时间内完成对特定区域的快速搜索。多机器人系统相对于单机器人在区域搜索任务执行效率、鲁棒性、灵活性和容错性等方面都有很大的优势，同时也面临如下限制：1）机载传感器的探测范围相对有限；2）无环境先验信息-包括障碍物和目标分布；3）需规避障碍物及其他机器人之间的碰撞。同时，针对异构自主无人系统差异大、传感器接口兼容性低、通信实时性差等问题，研制具备传感器即插即用能力的控制器中间件及工具软件。值得一提的是，机器人的模仿学习也是该领域的一大热门方向。对此，实验室在配药机器人的背景下正在进行相关研究。其目的就是通过赋予机器人模仿能力，使机器人的智能水平显著提高。
+
+
+
+</p>
+<!--<p style="text-align:center;">-->
+<!--    <img src=overallv1.png width="1000px" height="447px"></p>-->
+
+<div style="display: flex;">
+  <div class="picItem">
+    <img src=222.png width="700px" height="400px">
+    <p ></p>
+  </div>
+  <div class="picItem">
+    <img src=mid.png width="700px" height="400px">
+    <p ></p>
+  </div>
+  <div class="picItem">
+    <img src=mofan.png width="700px" height="400px">
+    <p ></p>
+  </div>
+</div>
+<hr>
+<h2>一些 Demos</h2>
+  <h3>(1)基于生物启发神经网络和DMPC的多机器人协同搜索算法</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=gaishu.jpg width="550px" height="350px">
+    <p >多机器人协同搜索算法概述</p>
+  </div>
+  <div class="picItem">
+    <img src=BNN.png width="600px" height="350px">
+    <p >生物启发神经网络介绍（BNN）</p>
+  </div>
+  <div class="picItem">
+    <img src=mpc.png width="550px" height="350px">
+    <p> 模型预测控制方法</p>
+  </div>
+  <div class="picItem">
+    <img src=tuti.gif width="350px" height="350px">
+    <p> 多机器人协同区域搜索演示</p>
+  </div>
+</div>
+<p>在这个工作中，我们基于生物启发神经网络（BNN）构建了区域搜索过程中的环境信息模型，之后引入分布式模型预测控制方法(DMPC)作为多机器人之间的决策机制，确定机器人的下一步路径，我们的代码将在整理后逐步开源。主要步骤如下:
+
+<p><b>1.区域地图表示</b>:首先构建任务搜索区域的栅格地图，即将任务区域划分为相同大小的栅格，栅格的状态可包括“未搜索栅格、自由栅格、障碍物栅格。注意，由于机器人面临的未知环境，栅格的初始状态均为未搜索</p>
+
+<p><b>2.BNN更新</b>: 机器人通过传感器获取其周围环境信息，更新栅格地图与BNN活性值,未搜索栅格的活性值将处于搜索神经元活性的顶峰，自由栅格（已搜索且无障碍物）的活性值其次，障碍物的活性值最低。</p>
+
+<p><b>3.DMPC决策</b>: 机器人预测其未来L步的运动状态，并优化搜索效能函数（包括神经元活性值增量与转弯代价），获取其下一步运动输入并确定下一步位置，机器人在整体上将朝活性值较大的区域运动，可避免重复搜索，同时规避障碍物。</p>
+
+<p><b>4.程序终止判定</b>: 如果机器人已经完全搜索任务区域完成或者搜索时间达到设定阈值，则终止搜索任务，否则，机器人将继续执行步骤2-3。</p>
+
+<p>通过这些步骤，我们就可以实现一个基于BNN与DMPC多机器人协同区域搜索算法，引导机器人在未知环境下完成指定区域的快速搜索。</p>
+
+  <h3>(2)面向复杂障碍物环境下基于DIBNN的多机器人协同区域搜索算法</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=env.png width="380px" height="400px">
+    <p >环境信息模型</p>
+  </div>
+  <div class="picItem">
+    <img src=DIBNN.jpg width="400px" height="400px">
+    <p >DIBNN结构</p>
+  </div>
+  <div class="picItem">
+    <img src=fuza.gif width="400px" height="400px">
+    <p >复杂障碍物环境下多机器人区域搜索演示</p>
+  </div>
+</div>
+<p>在这个工作中，提出了改进的BNN模型（IBNN）,同时，为了帮助多机器人应对复杂的障碍物环境，我们进一步提出了一种协同搜索机制，其中包含两层IBNN（dual IBNN, IBNN）,第一层IBNN引导机器探测未搜索区域，第二层IBNN在机器人陷入局部最优状态时引导机器人跳出该状态，从而提升多机器人在复杂障碍物环境下的搜索效率:
+
+<p><b>1.改进BNN模型</b>: 原始BNN的活性值主要受外部输入和周围神经元活性值影响，在复杂障碍物环境下将对神经元的正活性值的全局传播造成干扰，因此我们首先对BNN的特性进行了改进。</p>
+
+<p><b>2.第一层IBNN启动</b>: 机器人选择周围活性值最大的神经元对应的栅格作为下一步运动位置。</p>
+
+<p><b>3.局部最优状态判定</b>: 如果某个机器人其周围区域都被搜索，并且持续未发现新的未探测区域，则进入步骤4，否则继续执行步骤2.</p>
+
+<p><b>4.第二层IBNN启动</b>: 选择出机器人群体中状态最优的个体，即“最优机器人”,第二层IBNN的活性值将引导处于局部最优机器人向最优机器所处位置运动，到达指定位置后，返回步骤1。</p>
+
+<p><b>5.程序终止判定</b>: 如果机器人已经完全搜索任务区域完成或者搜索时间达到设定阈值，则终止搜索任务，否则，机器人将继续执行步骤2-4。</p>
+
+<p>通过这些步骤，我们就可以实现一个基于DIBNN多机器人协同区域搜索算法，引导机器人在未知的复杂障碍物环境下完成指定区域的快速搜索。</p>
+
+<h3>(3)高端智能控制器的即插即用中间件及工具软件</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=mw_dds.png width="900px" height="400px">
+      <p >集成DDS的即插即用型轻量化中间件设计</p>
+    </div>
+    <div class="picItem">
+      <img src=mw_sensor.png width="900px" height="390px">
+      <p >传感器设备管理框架</p>
+    </div>
+    </div>
+  </div>
+<p>在这个工作中，我们自主设计了应用于国产化硬件平台的自主无人系统的即插即用中间件软件:
+<p><b>1.中间件框架设计</b>: 设计传感器即插即用中间件框架，包括传感器驱动封装库（Sensor Driver）、设备管理模块（Sensor Manage）、数据分发接口包（Sensor Library）和相关工具（Sensor Tools）</p>
+
+<p><b>2.Sensor_driver设计</b>: 基于多态的思想，对不同传感器的驱动以插件化的形式接入。</p>
+
+<p><b>3.Sensor_Manage设计</b>: 设计了基于UDEV的传感器即插即用后台系统，对插入的传感器进行统一的驱动调度与数据发布。</p>
+
+<p><b>4.通信框架设计</b>: 设计基于DDS的分布式点对点快速通信框架，实现常用的数据发布订阅机制，QOS数据校验机制。</p>
+
+<p><b>5.任务调度框架设计</b>: 设计基于协程的任务调度框架，用于自主无人系统中用户级的任务调度可信配置与运行。</p>
+
+<p>通过这些步骤，我们可以实现一个自主无人系统控制器的即插即用中间件，达到传感器集中管理的目的。</p>
+<h3>(4)基于Panda机械臂的模仿学习</h3>
+<div style="display: flex;">
+  <div class="picItem">
+    <img src="Two_PandaReachDense.gif" width="450px" height="450px">
+    <p>连续触碰2点</p>
+  </div>
+  <div class="picItem">
+    <img src="Three_PandaReachDense.gif" width="450px" height="450px">
+    <p>连续触碰3点</p>
+  </div>
+  </div>
+  <p>在这项工作里，我们希望机械臂通过人类演示的视频中学习到相似的技能：
+  <p><b>1.数据采集</b>：使用摄像设备记录专家执行目标动作的视频。</p>
+  <p><b>2.数据预处理</b>：对采集到的视频进行预处理，包括视频帧的提取、图像的归一化等。</p>
+  <p><b>3.位姿估计</b>：使用位姿估计算法从视频帧中提取人类关键姿态信息（坐标）</p>
+  <p><b>4.建立Panda运动学模型</b>：关节限制、连杆从长度和末端执行器的运动范围等</p>
+  <p><b>5.动作转换</b>：使用逆运动学算法将人类的动作转化为Panda的关节角度位姿。</p>
+  <p><b>6.控制策略</b>：通过逆强化学习算法（inverse reinforcement learning)学习策略。</p>
+<hr>
+<h2>当前研究方向</h2>
+<ul>
+<div style="display: flex; flex-wrap:wrap;">
+  <div class="picItem">
+    <img src=grid_case2.jpg width="450px" height="450px">
+    <p >多机器人协同区域搜索</p>
+  </div>
+  <div class="picItem">
+    <img src=bizhan.jpg width="450px" height="450px">
+    <p >人机协作场景下机械臂动态避障</p>
+  </div>
+  <div class="picItem">
+    <img src=mmy.png width="450px" height="450px">
+    <p >自主无人系统控制器中间件</p>
+  </div>
+  <div class="picItem">
+    <img src=shiguan.gif width="350px" height="450px">
+    <p>面向半透明试管的机械臂抓取</p>
+  </div>
+  <br>
+ <div class="picItem">
+    <img src=7k.gif width="280px" height="450px">
+    <p>共融机器人配药技术</p>
+  </div>
+
+<!--  </div>-->
+<!--  <div class="picItem">-->
+<!--    <img src=fpga1.png width="350px" height="300px">-->
+<!--    <p>高光谱图像处理算法的FPGA实现</p>-->
+<!--  </div>-->
+</div>
+</ul>
+<hr>
+<h2>依托项目</h2>
+<ul>
+<li><p>自主无人系统的开放通用高端智能控制器.（科技创新2030-“新一代人工智能”重大项目）</p>
+</li>
+<li><p>面向生物疫苗制造的配药制药共融机器人关键技术研究.（国家自然科学基金重大研究计划-重点项目）</p>
+</li>
+</ul>
+<hr>
+<h2>投稿的工作</h2>
+<ol>
+<li><p>B. Chen (陈波，博士生), H Zhang*(张辉), Y Wang, et al, "DIBNN:A Dual-improved-BNN Based Algorithm For Multirobot Cooperative Area Search  in Complex Obstacle Environments". IEEE Transactions on Automation Science and Engineering.(Under Review)</p>
+<li><p>张辉，阳炼，罗鑫泳，钟杭，陈波，毛建旭，王耀南。一种面向自主无人系统的传感器即插即用中间件[P].专利号：202310695443.6，申请时间：2023.6.13</p>
+<li><p>张辉,梁志佳,陈波,胡非易,钟杭,毛建旭,王耀南。一种自主学习训练可视化系统及其方法[P].专利号：202310669792.0，申请时间：2023.6.7</p>
+<li><p>张辉，黄长庆，钟杭，江一鸣，罗鑫泳，尹松涛。面向视觉传感器的即插即用中间件软件（软著）流水号：2023R11L0967569，申请时间：2023.6.5</p>
+<li><p>张辉,梁志佳,胡非易,钟杭,陈波,罗鑫泳,尹松涛,阳炼,黄长庆。面向高端智能控制器的自主学习可视化软件（软著）流水号：2023R11L1047903，申请时间：2023.6.14</p>
+  <!--<li><p>王耀南,潘劲宇,张辉,毛建旭,朱青,赵禀睿,张金洲,陈煜嵘,苏学叁,尹阿婷. 一种基于医药高光谱检测网络的阈值感知低位量化方法[P]. 湖南省：CN115700806A,2023-02-07.(已公开)[<a href="./patent2.caj">caj</a>]</p>-->
+</ol>
+<!--<h3>Recent publications </h3>-->
+<hr>
+<h2>发表的成果</h2>
+<ol>
+<li><p>H. Zhang (张辉) et al., "A Practical Robotic Grasping Method by Using 6-D Pose Estimation With Protective Correction," in IEEE Transactions on Industrial Electronics, vol. 69, no. 4, pp. 3876-3886, April 2022, doi: 10.1109/TIE.2021.3075836.[<a href="./6.pdf">pdf</a>]</p>
+</li>
+<li><p>B. Chen (陈波，博士生), H Zhang (张辉), F. Zhang, Y, Wang, "A Multirobot Distributed Collaborative Region Coverage Search Algorithm Based on Glasius Bio-inspired Neural Network," in IEEE Transactions on Cognitive and Developmental Systems, 2022, doi: 10.1109/TCDS.2022.3218718.[<a href="./TCDS.pdf">pdf</a>]</p>
+</li>
+<li><p>B. Chen (陈波，博士生), W. Zhang, F. Zhang, Y. Liu and H. Yu, "A Multirobot Cooperative Area Coverage Search Algorithm Based on Bioinspired Neural Network in Unknown Environments," in IEEE Systems Journal, vol. 17, no. 2, pp. 1995-2006, June 2023, doi: 10.1109/JSYST.2022.3198712.[<a href="./ISJ.pdf">pdf</a>]</p>
+</li>
+<li><p>B. Chen, F. Zhang, Y. Liu et al. Multi-robot cooperate region coverage search algorithm based on distributed control [C]. The 2021 Chinese Intelligent Automation Conference (CIAC), 2022, 546-554.
+</li>
+<li><p>张方方,陈波,彭金柱等.基于生物启发神经网络和DMPC的多机器人协同搜索算法[J].控制与决策,2021,36(11):2699-2706.[<a href="./cdc.pdf">pdf</a>]</p>
+</li>
+ <li><p>张方方,陈波,,彭金柱等. 未知环境下基于生物启发的多机器人协作搜索方法[P].河南省：CN113110517B,2022-11-29.（已授权）[<a href="./patent.caj">caj</a>]</p>
+</li>
+</ol>
+<p><b>Note</b>: * indicates the corresponding author.</p>
+<h2>项目组成员</h2>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=Bo_Chen.jpg width="120px" height="180px">
+      <p >陈波（在读）</p>
+      <p >博士一年级</p>
+    </div>
+<!--    <div class="picItem">-->
+<!--      <img src=zhou.jpg width="120px" height="180px">-->
+<!--      <p >周熙栋（硕士毕业）</p>-->
+<!--      <p >即将博士入学</p>-->
+<!--    </div>-->
+    <div class="picItem">
+      <img src=li_kan.jpg width="120px" height="180px">
+      <p >李康（在读）</p>
+      <p >硕士毕业</p>
+    </div>
+    <div class="picItem">
+      <img src=yang.jpg width="120px" height="180px">
+      <p >阳炼（在读）</p>
+      <p >研一</p>
+    </div>
+  </div>
+  <h2>学术&活动</h2>
+    <div style="display: flex;">
+      <div class="picItem">
+        <img src=game.jpg width="350px" height="300px">
+        <p >学术竞赛</p>
+      </div>
+      <div class="picItem">
+        <img src=huiyi.jpg width="350px" height="300px">
+        <p >学术会议</p>
+      </div>
+      <div class="picItem">
+        <img src=hezuo.jpg width="350px" height="300px">
+        <p >校企合作</p>
+<!--      </div>-->
+<!--      <div class="picItem">-->
+<!--        <img src=4.jpg width="350px" height="300px">-->
+<!--        <p >组会讨论</p>-->
+      </div>
+    </div>
+
+  <p><b>如果您对此领域感兴趣并想加入我们的研究, 请联系我(陈波，cb233cb@163.com)或者张辉老师(zhanghuihby@126.com).谢谢!<b></p>
+</td>
+</tr>
+</table>
+<footer class="footer">
+  <div>
+    <p>National Engineering Research Center of Robot Vision Perception and Control Technology (RVC)</p>
+    <p>Hunan University</p>
+    <p>Changsha, Hunan, P.R. China</p>
+  </div>
+  <div>
+    <p>Copyright  RVC 2023</p>
+    <p>Above Site All right reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    var doc = document
+    function addScroll ()　{
+      var menu = doc.getElementsByClassName('menu-content')[0]
+      const top = doc.documentElement.scrollTop
+      menu.style= `margin-top: ${top}px` 
+    }
+
+    doc.addEventListener('scroll', addScroll.bind(this))
+  </script>
+</body>
+</html>
